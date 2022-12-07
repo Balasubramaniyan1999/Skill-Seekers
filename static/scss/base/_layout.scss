@@ -1,0 +1,49 @@
+.container {
+    max-width: 1260px;
+    padding: 0 20px;
+}
+
+.fx {
+    display: flex;
+    &--sb {
+        justify-content: space-between;
+    }
+    &--fe {
+        justify-content: flex-end;
+    }
+}
+
+.header {
+    padding: 20px;
+    background-color: #07032bd9;
+    color: white;
+    .navbar {
+        &__item {
+            margin-left: 10px;
+            :last-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.hero {
+    background-color: #1d1d57;
+    height: 100vh;
+    &-content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        h1 {
+            font-size: 48px;
+            line-height: 1.2;
+        }
+    }
+}
+
+.tc {
+    &-white {
+        color: $color-white;
+    }
+}
